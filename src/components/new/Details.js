@@ -1,6 +1,33 @@
+import { useState, useEffect } from "react";
 import styles from "./Details.module.css"
 
 function Details() {
+
+    const [form, setForm] = useState({
+        details: '',
+        events: 1,
+        period: 'week',
+        icon: '🏃‍♂️',
+        goal: 52,
+        deadline: '2030-01-01',
+        completed: 0
+    })
+
+    const { details, events, period, icon, goal, deadline, completed } = form;
+
+    const onChange = (event, prop) => {
+        setForm((estado) => ({ ...estado, [prop]: event.target.value }));
+
+    };
+
+    useEffect(() => {
+        console.log(form);
+    }, [form]);
+
+    const create = async () => {
+        console.log(form);
+    }
+
     const frequencyoptions = ["day", "week", "month", "year"];
     const Iconslist = ["💻", "🏃‍♂️", "📚", "✈️", "💵"];
     return (
@@ -11,6 +38,8 @@ function Details() {
                     <input
                         className="input"
                         placeholder="eg. 52 walks"
+                        value={details}
+                        onChange={e => onChange(e, 'details')}
                     />
                 </label>
                 <label htmlFor="" className="label">
@@ -19,8 +48,14 @@ function Details() {
                         <input
                             className="input mr-6"
                             type="number"
+                            value={events}
+                            onChange={e => onChange(e, 'events')}
                         />
-                        <select name="" id="" className="input">
+                        <select
+                            className="input"
+                            value={period}
+                            onChange={e => onChange(e, 'period')}
+                        >
                             {frequencyoptions.map(option => <option value={option}>{option}</option>)}
                         </select>
                     </div>
@@ -29,29 +64,46 @@ function Details() {
                     How many times do you want to complete this goal?
                     <input
                         className="input"
-                        type="number" />
+                        type="number"
+                        value={goal}
+                        onChange={e => onChange(e, 'goal')}
+                    />
                 </label>
                 <label htmlFor="" className="label">
                     Do you have a deadline?
                     <input
                         className="input"
-                        type="date" />
+                        type="date"
+                        value={deadline}
+                        onChange={e => onChange(e, 'deadline')}
+                    />
                 </label>
                 <label htmlFor="" className="label">
                     How many times have you already completed this goal?
                     <input
                         className="input"
-                        type="number" />
+                        type="number"
+                        value={completed}
+                        onChange={e => onChange(e, 'completed')}
+                    />
                 </label>
                 <label htmlFor="" className="label">
                     Choose the icon for the goal
-                    <select name="" id="" className="input">
+                    <select
+                        className="input"
+                        value={icon}
+                        onChange={e => onChange(e, 'icon')}
+                    >
                         {Iconslist.map(icon => <option value={icon}>{icon}</option>)}
                     </select>
                 </label>
             </form>
             <div className={styles.botones}>
-                <button className="boton boton--negro">Create</button>
+                <button
+                    className="boton boton--negro"
+                    onClick={create}
+                >
+                    Create</button>
                 <button className="boton boton--gris">Cancel</button>
             </div>
         </div>
