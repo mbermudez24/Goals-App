@@ -1,21 +1,23 @@
 import React from "react";
 import { ReactComponent as LogoSVG } from "../../img/logo.svg";
 import { ReactComponent as ProfileSVG } from "../../img/profile.svg";
-import './Header.css';
+import styles from './Header.module.css';
+import Link from "./Link";
 
 function Header() {
     return (
-        <header className="header" >
-            <div className="container" >
-                <LogoSVG className="logo" />
-                <a className="title" href="/">
+        <header className={styles.header} >
+            <div className={styles.container} >
+                <LogoSVG className={styles.logo} />
+                <a className={styles.title} href="/">
                     Goals App
                 </a>
             </div>
             <nav className="">
-                <a href="/profile" className="link">
-                    <ProfileSVG className="icon" />
-                </a>
+                <Link
+                    href="/profile"
+                    Icon={ProfileSVG}
+                />
             </nav>
         </header>
     );

@@ -1,7 +1,7 @@
-import './Footer.css'
+import styles from './Footer.module.css'
 function Footer() {
     return (
-        <footer className="footer">
+        <footer className={styles.footer}>
             <small>Developed adn Designed by Manuel Bermúdez. &copy; 2023. All rights reserved </small>
         </footer>
     );
