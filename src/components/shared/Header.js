@@ -6,9 +6,9 @@ import './Header.css';
 function Header() {
     return (
         <div className="header" >
-            <div className="flex items-center pl-4 " >
+            <div className="container" >
                 <LogoSVG className="logo" />
-                <a href="/">
+                <a className="title" href="/">
                     Goals App
                 </a>
             </div>
