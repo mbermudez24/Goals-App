@@ -8,13 +8,13 @@ function Principal({ children }) {
         <div className={styles.principal}>
             <aside className={styles.aside}>
                 <Link
-                    href="/lista"
+                    to="/list"
                     text="List of goals"
                     Icon={ListSVG}
                 />
 
                 <Link
-                    href="/create"
+                    to="/new"
                     text="New Goal"
                     Icon={NewSVG}
                 />
