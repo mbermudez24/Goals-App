@@ -19,7 +19,7 @@ function Principal({ children }) {
                     Icon={NewSVG}
                 />
             </aside>
-            <main className='main'>
+            <main className={styles.main}>
                 {children}
             </main>
 
