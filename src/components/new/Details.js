@@ -1,5 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import styles from "./Details.module.css"
+import { Context } from "../../services/Memory";
+import { useNavigate } from "react-router-dom";
 
 function Details() {
 
@@ -13,6 +15,8 @@ function Details() {
         completed: 0
     })
 
+    const [state, send] = useContext(Context);
+
     const { details, events, period, icon, goal, deadline, completed } = form;
 
     const onChange = (event, prop) => {
@@ -24,8 +28,12 @@ function Details() {
         console.log(form);
     }, [form]);
 
+    const navigate = useNavigate()
+
     const create = async () => {
-        console.log(form);
+        // console.log(form);
+        send({ type: 'create', goal: form });
+        navigate('/list');
     }
 
     const frequencyoptions = ["day", "week", "month", "year"];
@@ -56,7 +64,10 @@ function Details() {
                             value={period}
                             onChange={e => onChange(e, 'period')}
                         >
-                            {frequencyoptions.map(option => <option value={option}>{option}</option>)}
+                            {frequencyoptions.map(option =>
+                                <option key={option} value={option}>
+                                    {option}
+                                </option>)}
                         </select>
                     </div>
                 </label>
@@ -94,7 +105,10 @@ function Details() {
                         value={icon}
                         onChange={e => onChange(e, 'icon')}
                     >
-                        {Iconslist.map(icon => <option value={icon}>{icon}</option>)}
+                        {Iconslist.map(icon =>
+                            <option key={icon} value={icon}>
+                                {icon}
+                            </option>)}
                     </select>
                 </label>
             </form>

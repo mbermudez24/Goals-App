@@ -1,11 +1,14 @@
 import styles from './Link.module.css'
+import { Link as RouterLink } from 'react-router-dom';
 
-function Link({ Icon, text, href }) {
+
+function Link({ Icon, text, to }) {
     return (
-        <a href={href} className={styles.link}>
+        <RouterLink to={to} className={styles.link}>
             <Icon className={styles.icon} />
             {text && <span className={styles.text}>{text}</span>}
-        </a>
+        </RouterLink>
+
     );
 }
 

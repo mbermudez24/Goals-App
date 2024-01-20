@@ -15,7 +15,7 @@ function Header() {
             </div>
             <nav className="">
                 <Link
-                    href="/profile"
+                    to="/profile"
                     Icon={ProfileSVG}
                 />
             </nav>
