@@ -11,7 +11,7 @@ function Header() {
                     Metas App
                 </a>
             </div>
-            <nav className="flex">
+            <nav className="">
                 <a href="/">Profile</a>
             </nav>
         </header>
