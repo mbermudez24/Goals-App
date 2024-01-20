@@ -5,7 +5,7 @@ import './Header.css';
 
 function Header() {
     return (
-        <div className="header" >
+        <header className="header" >
             <div className="container" >
                 <LogoSVG className="logo" />
                 <a className="title" href="/">
@@ -14,10 +14,10 @@ function Header() {
             </div>
             <nav className="">
                 <a href="/profile" className="link">
-                    <ProfileSVG className="profilepic" />
+                    <ProfileSVG className="icon" />
                 </a>
             </nav>
-        </div>
+        </header>
     );
 }
 
