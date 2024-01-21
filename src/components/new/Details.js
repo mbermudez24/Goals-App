@@ -26,16 +26,19 @@ function Details() {
 
     };
 
+    const navigate = useNavigate()
+
+    const goalMemory = state.objects[id];
     useEffect(() => {
-        const goalMemory = state.objects[id];
+
         if (!id) return;
         if (!goalMemory) {
             return navigate('/list');
         }
         setForm(goalMemory);
-    }, [id]);
+    }, [id, goalMemory, navigate]);
 
-    const navigate = useNavigate()
+
 
     const create = () => {
 
