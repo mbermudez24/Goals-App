@@ -49,16 +49,35 @@ function reducer(state, action) {
             return newState;
         };
         case 'create': {
-            const id = Math.random(); //action.goals.id;
+            const id = Math.random(); //action.goal.id;
             const newState = {
                 order: [...state.order, id],
                 objects: {
                     ...state.objects,
-                    [id]: action.goal
+                    [id]: { id, ...action.meta }
                 }
             };
             return newState;
         };
+        case 'update': {
+            const id = action.goal.id;
+            state.objects[id] = {
+                ...state.objects[id],
+                ...action.goal
+            };
+            const newState = { ...state };
+            return newState;
+        }
+        case 'remove': {
+            const id = action.id;
+            const newOrder = state.order.filter(item => item != id);
+            delete state.objects[id];
+            const newState = {
+                order: newOrder,
+                objects: state.objects
+            };
+            return newState;
+        }
     }
 };
 
