@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Goals-App/static/css/main.efacc8fd.css",
-    "main.js": "/Goals-App/static/js/main.c1e22025.js",
-    "static/js/787.445fe7de.chunk.js": "/Goals-App/static/js/787.445fe7de.chunk.js",
-    "index.html": "/Goals-App/index.html",
-    "static/media/logo.svg": "/Goals-App/static/media/logo.270f6c761c3141ece0ac4823d8cda236.svg",
-    "static/media/list.svg": "/Goals-App/static/media/list.923c40d45a41bf4214ccbd2269172ce6.svg",
-    "static/media/profile.svg": "/Goals-App/static/media/profile.c9b4b763eeb7cfc6e748e25e7c2470a4.svg",
-    "static/media/new.svg": "/Goals-App/static/media/new.4d0d03cbbb94467e5ebd5830c14ce135.svg",
-    "main.efacc8fd.css.map": "/Goals-App/static/css/main.efacc8fd.css.map",
-    "main.c1e22025.js.map": "/Goals-App/static/js/main.c1e22025.js.map",
-    "787.445fe7de.chunk.js.map": "/Goals-App/static/js/787.445fe7de.chunk.js.map"
+    "main.css": "/Goals-App/list/static/css/main.efacc8fd.css",
+    "main.js": "/Goals-App/list/static/js/main.36ff6025.js",
+    "static/js/787.445fe7de.chunk.js": "/Goals-App/list/static/js/787.445fe7de.chunk.js",
+    "index.html": "/Goals-App/list/index.html",
+    "static/media/logo.svg": "/Goals-App/list/static/media/logo.270f6c761c3141ece0ac4823d8cda236.svg",
+    "static/media/list.svg": "/Goals-App/list/static/media/list.923c40d45a41bf4214ccbd2269172ce6.svg",
+    "static/media/profile.svg": "/Goals-App/list/static/media/profile.c9b4b763eeb7cfc6e748e25e7c2470a4.svg",
+    "static/media/new.svg": "/Goals-App/list/static/media/new.4d0d03cbbb94467e5ebd5830c14ce135.svg",
+    "main.efacc8fd.css.map": "/Goals-App/list/static/css/main.efacc8fd.css.map",
+    "main.36ff6025.js.map": "/Goals-App/list/static/js/main.36ff6025.js.map",
+    "787.445fe7de.chunk.js.map": "/Goals-App/list/static/js/787.445fe7de.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.efacc8fd.css",
-    "static/js/main.c1e22025.js"
+    "static/js/main.36ff6025.js"
   ]
 }
