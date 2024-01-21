@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Goals-App/list/static/css/main.efacc8fd.css",
-    "main.js": "/Goals-App/list/static/js/main.cddd5c1a.js",
+    "main.js": "/Goals-App/list/static/js/main.5156a3ca.js",
     "static/js/787.445fe7de.chunk.js": "/Goals-App/list/static/js/787.445fe7de.chunk.js",
     "index.html": "/Goals-App/list/index.html",
     "static/media/logo.svg": "/Goals-App/list/static/media/logo.270f6c761c3141ece0ac4823d8cda236.svg",
@@ -9,11 +9,11 @@
     "static/media/profile.svg": "/Goals-App/list/static/media/profile.c9b4b763eeb7cfc6e748e25e7c2470a4.svg",
     "static/media/new.svg": "/Goals-App/list/static/media/new.4d0d03cbbb94467e5ebd5830c14ce135.svg",
     "main.efacc8fd.css.map": "/Goals-App/list/static/css/main.efacc8fd.css.map",
-    "main.cddd5c1a.js.map": "/Goals-App/list/static/js/main.cddd5c1a.js.map",
+    "main.5156a3ca.js.map": "/Goals-App/list/static/js/main.5156a3ca.js.map",
     "787.445fe7de.chunk.js.map": "/Goals-App/list/static/js/787.445fe7de.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.efacc8fd.css",
-    "static/js/main.cddd5c1a.js"
+    "static/js/main.5156a3ca.js"
   ]
 }
